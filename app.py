@@ -121,7 +121,7 @@ if st.sidebar.button('Prediksi Harga Mobil'):
     }]))
 
     st.subheader('Hasil Prediksi Harga:')
-    st.success(f'Harga Mobil Diprediksi: Rp {final_predicted_selling_price:,.2f}')
+    st.success(f'Harga Mobil Diprediksi: INR {final_predicted_selling_price:,.2f}')
 
     st.markdown("""
     **Catatan:**
