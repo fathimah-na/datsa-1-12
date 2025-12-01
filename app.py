@@ -47,7 +47,7 @@ st.write('Aplikasi ini memprediksi harga jual mobil bekas berdasarkan beberapa p
 st.sidebar.header('Input Detail Mobil')
 
 # --- Input pengguna ---
-year_input = st.sidebar.number_input('Tahun Mobil', min_value=1990, max_value=2024, value=2015, step=1)
+year_input = st.sidebar.number_input('Tahun Mobil', min_value=1992, max_value=2020, value=2015, step=1)
 km_driven_input = st.sidebar.number_input('Jarak Tempuh (km)', min_value=0, max_value=1000000, value=50000, step=1000)
 fuel_type_input = st.sidebar.selectbox('Jenis Bahan Bakar', list(fuel_mapping.keys()))
 seller_type_input = st.sidebar.selectbox('Tipe Penjual', list(seller_type_mapping.keys()))
