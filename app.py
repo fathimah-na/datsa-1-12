@@ -96,7 +96,7 @@ if st.sidebar.button('Prediksi Harga Mobil'):
         km_driven_yj = transformed_data_for_pt[0, 1] # Ambil nilai km_driven_yj
 
         # Transformasi StandardScaler
-        data_for_scaler = pd.DataFrame([[km_driven_yj, age]], columns=['km_driven_yj'])
+        data_for_scaler = pd.DataFrame([[km_driven_yj]], columns=['km_driven_yj'])
         scaled_features = scaler.transform(data_for_scaler)
 
         # Susun DataFrame untuk prediksi
